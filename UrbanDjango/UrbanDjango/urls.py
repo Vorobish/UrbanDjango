@@ -20,6 +20,7 @@ from task2.views import func, Class
 # from task3.views import magazine, basket, home
 from task4.views import games, cart, platform, menu
 # from django.views.generic import TemplateView
+from task5.views import sign_up_by_html, sign_up_by_django
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,4 +31,6 @@ urlpatterns = [
     path('platform/games/', games),
     path('platform/cart/', cart),
     path('platform/menu/', menu),
+    path('django_sign_up/', sign_up_by_html),
+    path('', sign_up_by_django),
 ]
